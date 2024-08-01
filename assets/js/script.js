@@ -5,7 +5,21 @@
 /**
  * add event on element
  */
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdown = document.querySelector('.navbar-item.dropdown');
+  dropdown.addEventListener('click', function () {
+    const menu = this.querySelector('.dropdown-menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  });
 
+  // Close dropdown when clicking outside of it
+  document.addEventListener('click', function (e) {
+    if (!dropdown.contains(e.target)) {
+      const menu = dropdown.querySelector('.dropdown-menu');
+      menu.style.display = 'none';
+    }
+  });
+});
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
     for (let i = 0; i < elem.length; i++) {

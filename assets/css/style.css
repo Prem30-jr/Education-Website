@@ -150,12 +150,50 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
+/* Basic styles for the dropdown menu */
+.navbar-item.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none; /* Hide the dropdown menu by default */
+  position: absolute;
+  top: 100%; /* Position below the navbar item */
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  width: 200px;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.dropdown-menu li {
+  padding: 1px;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show the dropdown menu when hovering over the navbar item */
+.navbar-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 body {
   background-color: var(--white);
   color: var(--gray-web);
   font-size: 1.6rem;
   line-height: 1.75;
+  overflow-x: hidden;
 }
 
 :focus-visible { outline-offset: 4px; }

@@ -26,8 +26,8 @@
     <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.4.0/esm/ionicons.min.js" integrity="sha512-heZj7rPbZHWyOEhE34vsJkzj2DKK2mZ9D3jjMkXQJ0uMGu/m5iOty+le26NL1eFZ5+qa4XBYcflwYwITwCWufw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- 
     - google font link
   -->
@@ -41,11 +41,11 @@
     <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
-    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
-    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
-    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
-    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+    <link rel="preload" as="image" href="../assets/images/hero-bg.svg" />
+    <link rel="preload" as="image" href="../assets/images/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="../assets/images/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="../assets/images/hero-shape-1.svg" />
+    <link rel="preload" as="image" href="../assets/images/hero-shape-2.png" />
   </head>
 
   <body id="top">
@@ -57,7 +57,7 @@
       <div class="container">
         <a href="#" class="logo">
           <img
-            src="./assets/images/logo.svg"
+            src="../assets/images/logo.svg"
             width="162"
             height="50"
             alt="EduWeb logo"
@@ -68,7 +68,7 @@
           <div class="wrapper">
             <a href="#" class="logo">
               <img
-                src="./assets/images/logo.svg"
+                src="../assets/images/logo.svg"
                 width="162"
                 height="50"
                 alt="EduWeb logo"
@@ -93,8 +93,14 @@
               <a href="#about" class="navbar-link" data-nav-link>About</a>
             </li>
 
-            <li class="navbar-item">
+            <li class="navbar-item dropdown">
               <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
+              <ul class="dropdown-menu">
+                <li><a href="./categories1.html">Non-Degree Programs</a></li>
+                <li><a href="./categories3.html">Off-Campus Programs</a></li>
+                <li><a href="./categories4.html">Hybrid Distance Programs</a></li>
+                <!-- Add more courses here -->
+              </ul>
             </li>
 
             <li class="navbar-item">
@@ -159,7 +165,7 @@
                 style="--width: 370; --height: 220"
               >
                 <img
-                  src="./assets/images/course-1.jpg"
+                  src="../assets/images/course-4.png"
                   width="370"
                   height="220"
                   loading="lazy"
@@ -179,7 +185,7 @@
 
                 <h3 class="h3">
                   <a href="#" class="card-title"
-                    >Build Responsive Real- World Websites with HTML and CSS</a
+                    >Introduction to Generative AI</a
                   >
                 </h3>
 
@@ -227,7 +233,7 @@
                 style="--width: 370; --height: 220"
               >
                 <img
-                  src="./assets/images/course-2.jpg"
+                  src="../assets/images/course-5.png"
                   width="370"
                   height="220"
                   loading="lazy"
@@ -295,11 +301,11 @@
                 style="--width: 370; --height: 220"
               >
                 <img
-                  src="./assets/images/course-3.jpg"
+                  src="../assets/images/course-6.png"
                   width="370"
                   height="220"
                   loading="lazy"
-                  alt="The Complete Camtasia Course for Content Creators"
+                  alt="Python for Data Science, AI and Development"
                   class="img-cover"
                 />
               </figure>
@@ -315,7 +321,7 @@
 
                 <h3 class="h3">
                   <a href="#" class="card-title"
-                    >The Complete Camtasia Course for Content Creators</a
+                    >Python for Data Science, AI and Development</a
                   >
                 </h3>
 
@@ -369,11 +375,11 @@
                       style="--width: 370; --height: 220"
                     >
                       <img
-                        src="./assets/images/course-1.jpg"
+                        src="../assets/images/course-7.png"
                         width="370"
                         height="220"
                         loading="lazy"
-                        alt="Build Responsive Real- World Websites with HTML and CSS"
+                        alt="INtroduction to Java"
                         class="img-cover"
                       />
                     </figure>
@@ -389,7 +395,7 @@
       
                       <h3 class="h3">
                         <a href="#" class="card-title"
-                          >Build Responsive Real- World Websites with HTML and CSS</a
+                          >Introduction to Java Programming</a
                         >
                       </h3>
       
@@ -437,11 +443,11 @@
                       style="--width: 370; --height: 220"
                     >
                       <img
-                        src="./assets/images/course-2.jpg"
+                        src="../assets/images/course-8.png"
                         width="370"
                         height="220"
                         loading="lazy"
-                        alt="Java Programming Masterclass for Software Developers"
+                        alt="Java Full Stack Developer"
                         class="img-cover"
                       />
                     </figure>
@@ -457,7 +463,7 @@
       
                       <h3 class="h3">
                         <a href="#" class="card-title"
-                          >Java Programming Masterclass for Software Developers</a
+                          >Java Full Stack Developers</a
                         >
                       </h3>
       
@@ -505,11 +511,11 @@
                       style="--width: 370; --height: 220"
                     >
                       <img
-                        src="./assets/images/course-3.jpg"
+                        src="../assets/images/course-9.png"
                         width="370"
                         height="220"
                         loading="lazy"
-                        alt="The Complete Camtasia Course for Content Creators"
+                        alt="Data Structures & Algorithms"
                         class="img-cover"
                       />
                     </figure>
@@ -525,7 +531,7 @@
       
                       <h3 class="h3">
                         <a href="#" class="card-title"
-                          >The Complete Camtasia Course for Content Creators</a
+                          >Data Structures & Algorithms</a
                         >
                       </h3>
       
@@ -587,7 +593,7 @@
                   style="--width: 370; --height: 220"
                 >
                   <img
-                    src="./assets/images/course-1.jpg"
+                    src="../assets/images/course-10.png"
                     width="370"
                     height="220"
                     loading="lazy"
@@ -607,7 +613,7 @@
   
                   <h3 class="h3">
                     <a href="#" class="card-title"
-                      >Build Responsive Real- World Websites with HTML and CSS</a
+                      >Meta Backend Developer</a
                     >
                   </h3>
   
@@ -623,7 +629,7 @@
                     <p class="rating-text">(5.0/7 Rating)</p>
                   </div>
   
-                  <data class="price" value="29">$29.00</data>
+                  <data class="price" value="29">Free</data>
   
                   <ul class="card-meta-list">
                     <li class="card-meta-item">
@@ -655,7 +661,7 @@
                   style="--width: 370; --height: 220"
                 >
                   <img
-                    src="./assets/images/course-2.jpg"
+                    src="../assets/images/course-11.png"
                     width="370"
                     height="220"
                     loading="lazy"
@@ -675,7 +681,7 @@
   
                   <h3 class="h3">
                     <a href="#" class="card-title"
-                      >Java Programming Masterclass for Software Developers</a
+                      >.NET Full Stack Developer</a
                     >
                   </h3>
   
@@ -691,7 +697,7 @@
                     <p class="rating-text">(4.5 /9 Rating)</p>
                   </div>
   
-                  <data class="price" value="49">$49.00</data>
+                  <data class="price" value="49">Free</data>
   
                   <ul class="card-meta-list">
                     <li class="card-meta-item">
@@ -723,11 +729,11 @@
                   style="--width: 370; --height: 220"
                 >
                   <img
-                    src="./assets/images/course-3.jpg"
+                    src="../assets/images/course-12.png"
                     width="370"
                     height="220"
                     loading="lazy"
-                    alt="The Complete Camtasia Course for Content Creators"
+                    alt="Google AI Essentials"
                     class="img-cover"
                   />
                 </figure>
@@ -743,7 +749,7 @@
   
                   <h3 class="h3">
                     <a href="#" class="card-title"
-                      >The Complete Camtasia Course for Content Creators</a
+                      >Google AI Essentials</a
                     >
                   </h3>
   
@@ -759,7 +765,7 @@
                     <p class="rating-text">(4.9 /7 Rating)</p>
                   </div>
   
-                  <data class="price" value="35">$35.00</data>
+                  <data class="price" value="35">Free</data>
   
                   <ul class="card-meta-list">
                     <li class="card-meta-item">
@@ -797,11 +803,11 @@
                         style="--width: 370; --height: 220"
                       >
                         <img
-                          src="./assets/images/course-1.jpg"
+                          src="../assets/images/course-13.png"
                           width="370"
                           height="220"
                           loading="lazy"
-                          alt="Build Responsive Real- World Websites with HTML and CSS"
+                          alt="Machine Learning"
                           class="img-cover"
                         />
                       </figure>
@@ -817,7 +823,7 @@
         
                         <h3 class="h3">
                           <a href="#" class="card-title"
-                            >Build Responsive Real- World Websites with HTML and CSS</a
+                            >Machine Learning</a
                           >
                         </h3>
         
@@ -833,7 +839,7 @@
                           <p class="rating-text">(5.0/7 Rating)</p>
                         </div>
         
-                        <data class="price" value="29">$29.00</data>
+                        <data class="price" value="29">Free</data>
         
                         <ul class="card-meta-list">
                           <li class="card-meta-item">
@@ -865,11 +871,11 @@
                         style="--width: 370; --height: 220"
                       >
                         <img
-                          src="./assets/images/course-2.jpg"
+                          src="../assets/images/course-14.png"
                           width="370"
                           height="220"
                           loading="lazy"
-                          alt="Java Programming Masterclass for Software Developers"
+                          alt="Generative AI: Prompt Enginnering Basics"
                           class="img-cover"
                         />
                       </figure>
@@ -885,7 +891,7 @@
         
                         <h3 class="h3">
                           <a href="#" class="card-title"
-                            >Java Programming Masterclass for Software Developers</a
+                            >Generative AI: Prompt Enginnering Basics</a
                           >
                         </h3>
         
@@ -901,7 +907,7 @@
                           <p class="rating-text">(4.5 /9 Rating)</p>
                         </div>
         
-                        <data class="price" value="49">$49.00</data>
+                        <data class="price" value="49">Free</data>
         
                         <ul class="card-meta-list">
                           <li class="card-meta-item">
@@ -933,11 +939,11 @@
                         style="--width: 370; --height: 220"
                       >
                         <img
-                          src="./assets/images/course-3.jpg"
+                          src="../assets/images/course-15.png"
                           width="370"
                           height="220"
                           loading="lazy"
-                          alt="The Complete Camtasia Course for Content Creators"
+                          alt="AI for Bussiness"
                           class="img-cover"
                         />
                       </figure>
@@ -953,7 +959,7 @@
         
                         <h3 class="h3">
                           <a href="#" class="card-title"
-                            >The Complete Camtasia Course for Content Creators</a
+                            >AI For Bussiness</a
                           >
                         </h3>
         
